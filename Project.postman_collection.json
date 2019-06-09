@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "94920e50-fee5-4324-aea2-4abb87db34f9",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/tours",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "84bc3c10-58f2-4085-8252-f2d1a505040f",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "food1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "otto1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 7,\n\t\"date\":\"2019-06-07T15:30:21.611+0000\",\n\t\"max_nr_allowed\":35,\n\t\"price\":37,\n\t\"guide_id\":1,\n\t\"location_id\":2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/tours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tours",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "84bc3c10-58f2-4085-8252-f2d1a505040f",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "food1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "otto1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/tours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tours/10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "84bc3c10-58f2-4085-8252-f2d1a505040f",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "food1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "otto1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/tours/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tours",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
